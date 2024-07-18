@@ -37,4 +37,5 @@ COPY --from=prerelease /usr/src/app/tsconfig.json .
 USER bun
 # ARG PORT
 EXPOSE 3000/tcp
-CMD [ "bun", "start" ]
+# CMD [ "bun", "start" ]
+ENTRYPOINT [ "bun", "run", "index.ts" ]
