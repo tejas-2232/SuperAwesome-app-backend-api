@@ -38,4 +38,4 @@ USER bun
 # ARG PORT
 EXPOSE 3000/tcp
 # CMD [ "bun", "start" ]
-ENTRYPOINT [ "bun", "run", "index.ts" ]
+ENTRYPOINT [ "bun", "run"]
